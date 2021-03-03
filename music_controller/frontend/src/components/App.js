@@ -1,13 +1,23 @@
 import React, {Component} from 'react';
 import { render } from 'react-dom';
 
+// import pages
+import HomePage from './pages/HomePage';
+
 export default class App extends Component {
     constructor(props) {
         super(props);
+
+        this.state = {};
     }
 
     render() {
-        return (<h1>TESTING REACT CODE</h1>);
+        return (
+            <div>
+                <h1>TESTING REACT</h1>
+                <HomePage />
+            </div>
+        );
     }
 }
 
